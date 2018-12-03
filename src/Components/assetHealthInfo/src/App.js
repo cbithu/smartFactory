@@ -1,4 +1,4 @@
-//import React, { Component } from 'react';
+import { Component } from 'react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
@@ -367,7 +367,7 @@ return (
 			<div className="legendDiv">
 				<ul className="legend">
 				<li><span className="currentVal" /> Current Value</li>
-				<li><span className="thresoldVal" /> Threshold</li>
+				<li><span className="thresoldVal" /> Threshold Value</li>
 				</ul>
 			</div>
 			<div id="flex-container">

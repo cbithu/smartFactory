@@ -15,6 +15,7 @@
 }
 .asset-operational-parameters{
     width: 62.5%;
+    height: 206px;
     display: inline-block;
     background-color: #ffffff;
     border-radius: 6px;
@@ -35,3 +36,80 @@
     margin-top: 1%;
     margin-bottom: 1%;
 }
+.asset-health-info{
+    display: inline-block;
+    width: 35%;
+    height: 206px;
+    margin-left: 2%; 
+    background-color: #ffffff;
+    border-radius: 6px;
+    vertical-align: bottom;
+}
+.asset-health-info-img{
+    display: inline-block;
+}
+.asset-health-info-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 1%;
+}
+.asset-health-info-card-description{
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.asset-health-info .humidityDiv, .asset-health-info .humidityDiv::before,
+.asset-health-info .temperatureDiv, .asset-health-info .temperatureDiv::before,
+.asset-health-info .vibrationDiv, .asset-health-info .vibrationDiv::before{
+    height: 18vh;
+}
+.asset-health-info .humidityDiv
+{
+    width: 400%;
+    margin-left: 20px;
+}
+.asset-health-info .temperatureDiv{
+    width: 400%;
+}
+.asset-health-info .vibrationDiv{
+    width: 400%;
+}
+.asset-health-info .humidityVal{
+    position: static;
+    padding-left: 30px;
+}
+.asset-health-info .humidityDiv::before,
+.asset-health-info .temperatureDiv::before,
+.asset-health-info .vibrationDiv::before
+{
+    width: 100%;
+}
+.asset-health-info .legend li{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.asset-health-info #flex-container{
+    justify-content: flex-start;
+}
+.asset-health-info .flex-item{
+    margin-left: 28%;
+}
+.asset-health-info .flex-item:first-child{
+    margin-left: 0px;
+}
+.asset-health-info .bar-hd{
+    margin-top: 10px;
+}
+.asset-health-info .humidityRedline::before,
+.asset-health-info .tempRedline::before,
+.asset-health-info .vibrationRedline::before
+{
+    width: 125%; 
+}
+.asset-health-info .flex-item:first-child .bar-hd{
+    margin-left: 20px;
+}
+
+
