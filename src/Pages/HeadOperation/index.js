@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './index.css';
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
 //import {orderFulfillViz} from '../../Components/orderFulfill/orderFulfill';
 import { OeeCard } from '../../Components/oeeCard/oeeCard';
 import { FactoryOEE } from '../../Components/factoryOEE/FactoryOEE';
-import {MapContainer} from '../../Components/googleMapwidget/MapContainer'
+import {MapContainer} from '../../Components/googleMapwidget/MapContainer';
 import FactorySign from '../../Assets/62C905DB-3F79-4848-A8C9-B3F7C126E67B.png';
 import PercentSign from '../../Assets/E66F0AC9-054B-4F82-8430-2630885DDB9D.png';
 
@@ -11,7 +12,7 @@ class HeadOperation extends Component {
     render() {
       return (
         <div className="head-operation-page">
-            <div>Smart Factory Solutions</div>
+            <div>Smart Factory</div>
             <div className="container-1">
                 <div className="factory-operational-parameters">
                     <div className="factory-operational-parameters-card-description">

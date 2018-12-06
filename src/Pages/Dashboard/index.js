@@ -3,7 +3,7 @@ import { ProdLineOEE } from '../../Components/prodLineOEE/prodLineOEE';
 import './index.css';
 import { OeeCard } from '../../Components/oeeCard/oeeCard';
 import { FactoryFloor } from '../../Components/factoryMap/factoryFloor';
-//import {orderFulfillViz} from '../../Components/orderFulfill/orderFulfill';
+//import {OrderFulfillViz} from '../../Components/orderFulfill/orderFulfill';
 import PercentSign from '../../Assets/E66F0AC9-054B-4F82-8430-2630885DDB9D.png';
 import FactorySign from '../../Assets/62C905DB-3F79-4848-A8C9-B3F7C126E67B.png';
 

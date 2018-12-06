@@ -3,8 +3,9 @@ import './index.css';
 import PercentSign from '../../Assets/E66F0AC9-054B-4F82-8430-2630885DDB9D.png';
 import HealthSign from '../../Assets/EDF5958B-80BA-475B-98B9-CC7E8A96F56A.png';
 import { OeeCard } from '../../Components/oeeCard/oeeCard';
-import {AssetAvatar} from '../../Components/assetAvatar/assetAvatar'
-import {HealthInfo} from '../../Components/assetHealthInfo/src/App'
+import {AssetAvatar} from '../../Components/assetAvatar/assetAvatar';
+//import {HealthInfo} from '../../Components/assetHealthInfo/src/App';
+
 
 class AssetDrilldown extends Component {
     render() {
@@ -24,7 +25,7 @@ class AssetDrilldown extends Component {
                         <img src={HealthSign} className="asset-health-info-img"></img>
                         <div className="asset-health-info-text">Asset Health</div>
                     </div>
-                        <HealthInfo />
+                        
                 </div>
             </div>
             <div className="container-2">

@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './assetLifeInfo.css';
 
 
-    class AssetLifeInfo extends React.Component {
+    export class AssetLifeInfo extends React.Component {
 		constructor(props) {
 			super(props);
 			//this.handleLoad = this.handleLoad.bind(this);
@@ -63,4 +64,4 @@ import ReactDOM from 'react-dom';
     
     }
 
-module.exports = AssetLifeInfo;
+export default AssetLifeInfo;

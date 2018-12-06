@@ -10,7 +10,7 @@ import _ from 'lodash';
 import DateRangePicker from 'react-daterange-picker';
 import Moment from 'moment';
 import {extendMoment} from 'moment-range';
-import AlertDetail from './AlertDetail';
+import AlertDetail from './alertDetail';
 const moment = extendMoment(Moment);
 
 export class DataTableComponent extends React.Component {

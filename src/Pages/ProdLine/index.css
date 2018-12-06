@@ -43,9 +43,8 @@
     margin-right: 20px;
 }
 .production-line-map-card-description{
-    margin-left: 2%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-left: 3.5%;
+    margin-top: 2%;
 }
 .production-line-map-img{
     display: inline-block;
@@ -55,10 +54,49 @@
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    margin-left: 0.7%
+    margin-left: 1.5%;
 }
 .alert-list{
     display: inline-block;
-    width: 52%;
-
+    width: 57%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    vertical-align: top;
+}
+.alert-list-card-description{
+    margin-left: 2%;
+    margin-top: 1.8%;
+}
+.alert-list-img{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+}
+.alert-list-text{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-left: 1%;
+    vertical-align: bottom;
+    vertical-align: top;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #DBDBDB;
+    border-radius: 3px;
+}
+.alert-list .react-bs-table{
+    font-family: 'Open Sans', sans-serif;
+}
+.react-bs-table-search-form{
+    display: none;
+}
+#alertDetail{
+    top: 0px;
 }

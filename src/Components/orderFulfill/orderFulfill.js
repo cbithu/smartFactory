@@ -1,10 +1,10 @@
-//import React, { Component } from 'react';
-import React from 'react';
+import React, { Component } from 'react';
+//import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import './orderFulfill.css';
 
-function orderFulfillViz(slice, payload) {
+export function OrderFulfillViz(slice, payload) {
   const container = document.querySelector(slice.selector);
 
   const json = payload.data.data;
@@ -48,7 +48,7 @@ function orderFulfillViz(slice, payload) {
         this.handleLoad = this.handleLoad.bind(this);
 
         this.state = {
-            appData :vizData
+            appData : vizData
         };
     }
 
@@ -170,9 +170,6 @@ function orderFulfillViz(slice, payload) {
         return (
     
           <div className="mainDiv" id="orderFulfilldiv">
-            
-                            
-
             <div className="component_hd xs-mb-15"><img className="xs-mr-10" src = "/static/assets/images/icon-tick.png"></img><span>{vizLabel}</span></div>
             <div id = "orderfulfillWeeklyWrapper" style={{clear: 'both'}}>
               <div id = "weeklyOrdersAll" className="orders_all">
@@ -200,5 +197,5 @@ function orderFulfillViz(slice, payload) {
     ReactDOM.render(<App />, container);
 
 }
-module.exports = orderFulfillViz;
+export default OrderFulfillViz;
 

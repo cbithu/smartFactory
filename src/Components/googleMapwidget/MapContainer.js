@@ -69,7 +69,7 @@ export class MapContainer extends React.Component {
         var currMarkerCount = 0;
         for(var i in markers){
             var icon = {
-                //url: "//images/markers/"+markers[i][3]+".png", // url
+                //url: '../../Assets/'+markers[i][3]+'.png', // url
                 scaledSize: new maps.Size(33, 40), // scaled size
                 origin: new maps.Point(0, 0), // origin
                 anchor: new maps.Point(0, 30) // anchor
