@@ -3,15 +3,16 @@ import './index.css';
 import PercentSign from '../../Assets/E66F0AC9-054B-4F82-8430-2630885DDB9D.png';
 import HealthSign from '../../Assets/EDF5958B-80BA-475B-98B9-CC7E8A96F56A.png';
 import { OeeCard } from '../../Components/oeeCard/oeeCard';
-import {AssetAvatar} from '../../Components/assetAvatar/assetAvatar';
+import { DataTableComponentTabs } from '../../Components/DataTableComponent/DataTableComponentTabs';
+//import {AssetAvatar} from '../../Components/assetAvatar/assetAvatar';
 //import {HealthInfo} from '../../Components/assetHealthInfo/src/App';
+import AlertSign from '../../Assets/alert.png';
 
 
 class AssetDrilldown extends Component {
     render() {
       return (
         <div className="asset-view-page">
-            <div>Smart Factory Solutions</div>
             <div className="container-1">
                 <div className="asset-operational-parameters">
                     <div className="asset-operational-parameters-card-description">
@@ -30,10 +31,16 @@ class AssetDrilldown extends Component {
             </div>
             <div className="container-2">
                 <div className="asset-avatar">
-                    <AssetAvatar />
+                    
                 </div>
                 <div className="alert-downtime">
-                    
+                    <div className="alert-downtime-card-description">
+                        <img src={AlertSign} className="alert-downtime-img"></img>
+                        <div className="alert-downtime-text">Alerts</div>
+                    </div> 
+                    <div className = "prod-line-datatable"> 
+                        <DataTableComponentTabs />
+                    </div>
                 </div>
             </div>
         </div>

@@ -76,7 +76,7 @@ export class AssetAvatar extends React.Component {
     var tmp = this.state.values;
       return (
     		<div id="assetAvatar" ref="assetAvatar">
-                <div className="innerImage" style={{backgroundImage:'url(images/assets/'+this.state.imageMapping[this.state.assetID]+')'}}>
+                <div className="innerImage" style={{backgroundImage:'url(../../Assets/'+this.state.imageMapping[this.state.assetID]+')'}}>
                 {tmp.map((item,key) => (
                     <div key={item.name} data-sequence={key} className={["sensor "+item.name+ " " + this.state.assetID]} type={item.name} data-valueType={item.value[3]}></div>
                 ))}

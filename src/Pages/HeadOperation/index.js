@@ -12,7 +12,6 @@ class HeadOperation extends Component {
     render() {
       return (
         <div className="head-operation-page">
-            <div>Smart Factory</div>
             <div className="container-1">
                 <div className="factory-operational-parameters">
                     <div className="factory-operational-parameters-card-description">

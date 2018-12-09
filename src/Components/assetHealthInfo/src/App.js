@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-	export class HealthInfo extends Component {
+export class HealthInfo extends Component {
     state = { loading: false };
 
     componentDidMount() {

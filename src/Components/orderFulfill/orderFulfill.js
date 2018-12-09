@@ -170,7 +170,7 @@ export function OrderFulfillViz(slice, payload) {
         return (
     
           <div className="mainDiv" id="orderFulfilldiv">
-            <div className="component_hd xs-mb-15"><img className="xs-mr-10" src = "/static/assets/images/icon-tick.png"></img><span>{vizLabel}</span></div>
+            <div className="component_hd xs-mb-15"><img className="xs-mr-10" src = "/static/assets/images/icon-tick.png"></img><span></span></div>
             <div id = "orderfulfillWeeklyWrapper" style={{clear: 'both'}}>
               <div id = "weeklyOrdersAll" className="orders_all">
                 <div id = "weekly_order_name" className="order_name">WEEKLY ORDERS</div>

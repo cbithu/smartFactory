@@ -22,6 +22,7 @@
 }
 .factory-floor-map-img{
     display: inline-block;
+    padding-bottom: 9px;
 }
 .factory-floor-map-text{
     display: inline-block;
@@ -42,7 +43,7 @@
     background-color: #ffffff;
     border-radius: 4px;
     overflow-y: scroll;
-    height: 510px;
+    height: 515px;
 }
 .custom-scrollbar::-webkit-scrollbar {
     width: 6px;
@@ -60,6 +61,7 @@
 }
 .production-line-values-img{
     display: inline-block;
+    padding-bottom: 9px;
 }
 .production-line-values-text{
     display: inline-block;

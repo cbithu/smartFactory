@@ -11,7 +11,6 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="dashboard-page">
-          <div>Smart factory solutions</div>
           <div className="container-1">
               <div className="factory-operational-parameters">
                 <div className="factory-operational-parameters-card-description">

@@ -21,6 +21,7 @@
 }
 .production-line-operational-parameters-img{
     display: inline-block;
+    padding-bottom: 9px;
 }
 .production-line-operational-parameters-text{
     font-family: 'Open Sans', sans-serif;
@@ -48,6 +49,7 @@
 }
 .production-line-map-img{
     display: inline-block;
+    padding-bottom: 9px;
 }
 .production-line-map-text{
     display: inline-block;
@@ -62,6 +64,8 @@
     background-color: #ffffff;
     border-radius: 4px;
     vertical-align: top;
+    height: 543px;
+    overflow: hidden;
 }
 .alert-list-card-description{
     margin-left: 2%;
@@ -78,18 +82,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     margin-left: 1%;
-    vertical-align: bottom;
-    vertical-align: top;
-}
-.custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
-}
-.custom-scrollbar::-webkit-scrollbar-track {
-    background: #ffffff; 
-}
-.custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #DBDBDB;
-    border-radius: 3px;
+    vertical-align: middle;
 }
 .alert-list .react-bs-table{
     font-family: 'Open Sans', sans-serif;
@@ -99,4 +92,19 @@
 }
 #alertDetail{
     top: 0px;
+}
+.prod-line-datatable tr{
+    height: 75px;
+}
+
+.prod-line-datatable .react-bs-container-body td{
+    vertical-align: middle;
+}
+.prod-line-datatable #tableGridPanel .react-bs-container-body{
+    max-height: 405px;
+    overflow-y: scroll;
+}
+.prod-line-datatable #tableGridPanel .react-bs-container-body::-webkit-scrollbar-thumb{
+    background: #DBDBDB;
+    border-radius: 3px;
 }

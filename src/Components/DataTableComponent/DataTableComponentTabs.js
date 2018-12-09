@@ -13,7 +13,7 @@ import {extendMoment} from 'moment-range';
 import AlertDetail from './alertDetail';
 const moment = extendMoment(Moment);
 
-export class DataTableComponent extends React.Component {
+export class DataTableComponentTabs extends React.Component {
 
   constructor(props) {
     super(props);
@@ -535,5 +535,5 @@ export class DataTableComponent extends React.Component {
  
 }
 
-export default DataTableComponent;
+export default DataTableComponentTabs;
 
