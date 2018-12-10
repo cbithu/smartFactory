@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap'; 
-//import {orderFulfillViz} from '../../Components/orderFulfill/orderFulfill';
+import {OrderFulfillViz} from '../../Components/orderFulfill/orderFulfill';
 import { OeeCard } from '../../Components/oeeCard/oeeCard';
 import { FactoryOEE } from '../../Components/factoryOEE/FactoryOEE';
 import {MapContainer} from '../../Components/googleMapwidget/MapContainer';
@@ -21,7 +21,7 @@ class HeadOperation extends Component {
                     <OeeCard />   
                 </div>
                 <div className="order-fulffilment">
-                    
+                    <OrderFulfillViz />
                 </div>
             </div>
             <div className="container-2">

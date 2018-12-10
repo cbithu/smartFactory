@@ -11,6 +11,10 @@ import DateRangePicker from 'react-daterange-picker';
 import Moment from 'moment';
 import {extendMoment} from 'moment-range';
 import AlertDetail from './alertDetail';
+import './dataTableComponent.css';
+import './react-bootstrap-table-all.min.css';
+import './react-calendar.css';
+import './dataTableComponent-dep.css';
 const moment = extendMoment(Moment);
 
 export class DataTableComponentTabs extends React.Component {

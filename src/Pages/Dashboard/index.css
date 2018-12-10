@@ -4,7 +4,7 @@
     padding: 0;
 }
 .container-2{
-    padding-top: 2.2%;
+    padding-top: 1%;
     padding-right: 2.8%;
     padding-left: 2.8%;
     padding-bottom: 2.2%;
@@ -12,17 +12,17 @@
 .container-1{
     padding-left: 2.8%;
     padding-right: 2.8%;
+    padding-top: 1%;
 }
 .factory-floor-map{
-    width: 60%;
+    width: 54.5%;
     display: inline-block;
     background-color: #ffffff;
     border-radius: 6px;
-    margin-right: 20px;
+    margin-right: 1%;
 }
 .factory-floor-map-img{
     display: inline-block;
-    padding-bottom: 9px;
 }
 .factory-floor-map-text{
     display: inline-block;
@@ -38,12 +38,12 @@
     margin-right: 2.2%;
 }
 .production-line-values{
-    width: 38.5%;
+    width: 44.5%;
     display: inline-block;
     background-color: #ffffff;
     border-radius: 4px;
     overflow-y: scroll;
-    height: 515px;
+    height: 510px;
 }
 .custom-scrollbar::-webkit-scrollbar {
     width: 6px;
@@ -61,7 +61,6 @@
 }
 .production-line-values-img{
     display: inline-block;
-    padding-bottom: 9px;
 }
 .production-line-values-text{
     display: inline-block;
@@ -76,6 +75,7 @@
     display: inline-block;
     background-color: #ffffff;
     border-radius: 6px;
+    margin-right: 1%;
 }
 .factory-operational-parameters-img{
     display: inline-block;
@@ -94,8 +94,21 @@
     margin-bottom: 1%;
 }
 .order-fulffilment{
-    width:30.6%;
-    height: 25.3%;
+    width: 36.5%;
+    height: 207.6px;
     display: inline-block;
     background-color: #ffffff;
+    border-radius: 6px;
 }
+.factory-floor-map #factoryView .innerImage{
+    margin-left: -376px;
+    width: 750px;
+    margin-top: -233px;
+}
+#dailyOrdersAll #daily_order_name.order_name{
+    margin-top: 5px;
+}
+#fakelinedaily{
+    padding-top: 23px;
+}
+

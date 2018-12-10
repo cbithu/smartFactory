@@ -1,7 +1,7 @@
 #orderFulfilldiv
 {
 	border-radius:4px;
-	padding:15px;
+	padding: 10px 20px 20px 20px;
 	width:100%;	
   vertical-align: middle;
   box-sizing: border-box;
@@ -41,7 +41,8 @@
 
 #orderFulfilldiv .tot_pend_ordrs
 {
-	font-weight: bold;
+  font-weight: bold;
+  display: inline-block;
 }
 
 /*.orders_weekly
@@ -64,9 +65,10 @@
 	text-transform:uppercase;
 	color:#999;
 	float:left;
-	padding-bottom:5px;
+	padding-bottom:15px;
 	font-size:14px;
-	color:#757575;
+  color:#757575;
+  margin-top: 14px;
 }
 
 
@@ -330,7 +332,7 @@
   border-radius: 50%;
   text-align: right;
   position: relative;
-  margin-top: -7px;
+  margin-top: -11px;
  
 }
  #orderFulfilldiv .lastCircle{
@@ -375,6 +377,23 @@
   position: relative;
   margin-top: -7px;
   /* display: inline-block; */
+ }
+
+ .order-fulfill-text{
+   font-size: 20px;
+   font-weight: bold;
+   font-family: 'Open Sans', sans-serif;
+   margin-left: 1%;
+ }
+
+ #weeklyOrdersAll{
+   margin-top: 5px;
+ }
+ #dailyOrdersAll{
+   margin-top: -7px;
+ }
+ #pending_orders_daily{
+   padding-top: 4px;
  }
 
  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {

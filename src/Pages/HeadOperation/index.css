@@ -19,6 +19,7 @@
     display: inline-block;
     background-color: #ffffff;
     border-radius: 6px;
+    margin-right: 1%;
 }
 .factory-operational-parameters-img{
     display: inline-block;
@@ -91,4 +92,22 @@
 .custom-scrollbar::-webkit-scrollbar-thumb {
     background: #DBDBDB;
     border-radius: 3px;
+}
+.order-fulffilment{
+    width: 36.5%;
+    height: 207.6px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+.factory-floor-map #factoryView .innerImage{
+    margin-left: -376px;
+    width: 750px;
+    margin-top: -233px;
+}
+#dailyOrdersAll #daily_order_name.order_name{
+    margin-top: 5px;
+}
+#fakelinedaily{
+    padding-top: 23px;
 }

@@ -3,16 +3,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import './orderFulfill.css';
+import TickSign from '../../Assets/group-8.png';
 
-export function OrderFulfillViz(slice, payload) {
-  const container = document.querySelector(slice.selector);
-
-  const json = payload.data.data;
-
-  const hasData = payload.data && payload.data.length > 0;
-
-  let vizLabel = payload.form_data.chart_header ? payload.form_data.chart_header : 'Order Fulfillment';
-
+export function OrderFulfillViz() {
+  
   let vizData = {
     "weeklyTotalCount":"150", 
     "weeklyCount":"110",
@@ -20,21 +14,29 @@ export function OrderFulfillViz(slice, payload) {
     "dailyCount":"10"
   }
 
+  //const json = payload.data.data;
+  //const hasData = payload.data && payload.data.length > 0;
+  //let vizLabel = payload.form_data.chart_header ? payload.form_data.chart_header : 'Order Fulfillment';
+  const json = vizData
+  const hasData = true;
+  let vizLabel = 'Order Fulfillment';
+
+
   if(json.length > 0){
   vizData = dataObj(json);
   }
-  var formData = payload.form_data;
-  var dts = formData.datasource.split("__");
-  let url = "/superset/explore_json/"+ dts[1] +"/"+ dts[0] +"/?" + window.location.href.split("?")[1];
+  // var formData = payload.form_data;
+  // var dts = formData.datasource.split("__");
+  // let url = "/superset/explore_json/"+ dts[1] +"/"+ dts[0] +"/?" + window.location.href.split("?")[1];
 
   function dataObj(json){
-  return {
-      "weeklyTotalCount": [json[0].Weekly_Total_Count],
-      "weeklyCount": [json[0].Weekly_Count],
-      "dailyTotalCount": [json[0].Daily_Total_Count],
-      "dailyCount": [json[0].Daily_Count]
+    return {
+        "weeklyTotalCount": [json[0].Weekly_Total_Count],
+        "weeklyCount": [json[0].Weekly_Count],
+        "dailyTotalCount": [json[0].Daily_Total_Count],
+        "dailyCount": [json[0].Daily_Count]
 
-    };
+      };
   }
 
 
@@ -133,68 +135,71 @@ export function OrderFulfillViz(slice, payload) {
       $( "#fakelinedaily" ).html(fakelineDaily);
     }
     
-      componentDidMount() {
-        this.handleLoad();          
-        var that = this;
-        var d = new Date();
-        clearInterval(refreshData);
-        refreshData = setInterval(function(){
-            $.ajax({
-                url: url,
-                method: 'GET',
-                data : {
-                    form_data : JSON.stringify(formData),
-                    dt : d.getTime()
-                },
-                success: function(data){
-                    let json = data.data.data;
-                    if(json.length > 0){
-                        var _setData = dataObj(json);
-                        that.setState({
-                            appData: _setData
-                        });
-                        that.handleLoad();
-                    }
-                },
-            });
-        },15000);
-      }
-
-      componentWillUnmount() {
-          clearInterval(refreshData);
-          this.handleLoad();				
-      }
-
-      render() {
-        var tmp = this.state.appData;
-        return (
-    
-          <div className="mainDiv" id="orderFulfilldiv">
-            <div className="component_hd xs-mb-15"><img className="xs-mr-10" src = "/static/assets/images/icon-tick.png"></img><span></span></div>
-            <div id = "orderfulfillWeeklyWrapper" style={{clear: 'both'}}>
-              <div id = "weeklyOrdersAll" className="orders_all">
-                <div id = "weekly_order_name" className="order_name">WEEKLY ORDERS</div>
-                <div id="pending_orders_weekly" className="pending_orders">
-                  <label className="no_of_orders">{tmp.weeklyCount}</label><label className="tot_pend_ordrs"><p>/  {tmp.weeklyTotalCount}</p></label> <label className="total_orders">orders pending</label>
-                </div> 
-                <div id = "fakelineweekly"></div>
-              </div>	
-            </div>	
-            <div id = "orderfulfillDailyWrapper" style={{clear: 'both'}}>	
-              <div id = "dailyOrdersAll" className="orders_all">	
-                <div id = "daily_order_name" className="order_name">DAILY ORDERS</div>
-                <div id = "pending_orders_daily" className="pending_orders">
-                  <label className="no_of_orders">{tmp.dailyCount}</label><label className="tot_pend_ordrs">/  {tmp.dailyTotalCount}</label> <label className="total_orders">orders pending</label>
-                </div>
-                <div id = "fakelinedaily"></div>
-              </div>	
-            </div>
-          </div>
-        );
-      }
+    componentDidMount() {
+      this.handleLoad();          
+      var that = this;
+      var d = new Date();
+      // clearInterval(refreshData);
+      // refreshData = setInterval(function(){
+      //     $.ajax({
+      //         url: url,
+      //         method: 'GET',
+      //         data : {
+      //             form_data : JSON.stringify(formData),
+      //             dt : d.getTime()
+      //         },
+      //         success: function(data){
+      //             let json = data.data.data;
+      //             if(json.length > 0){
+      //                 var _setData = dataObj(json);
+      //                 that.setState({
+      //                     appData: _setData
+      //                 });
+      //                 that.handleLoad();
+      //             }
+      //         },
+      //     });
+      // },15000);
     }
 
-    ReactDOM.render(<App />, container);
+    componentWillUnmount() {
+        clearInterval(refreshData);
+        this.handleLoad();				
+    }
+
+    render() {
+      var tmp = this.state.appData;
+      return (
+  
+        <div className="mainDiv" id="orderFulfilldiv">
+          <div className="component_hd xs-mb-15"><img className="xs-mr-10" src = {TickSign}></img><span className="order-fulfill-text">Order Fulfillment</span></div>
+          <div id = "orderfulfillWeeklyWrapper" style={{clear: 'both'}}>
+            <div id = "weeklyOrdersAll" className="orders_all">
+              <div id = "weekly_order_name" className="order_name">WEEKLY ORDERS</div>
+              <div id="pending_orders_weekly" className="pending_orders">
+                <label className="no_of_orders">{tmp.weeklyCount}</label><label className="tot_pend_ordrs"><p>/  {tmp.weeklyTotalCount}</p></label> <label className="total_orders">orders pending</label>
+              </div> 
+              <div id = "fakelineweekly"></div>
+            </div>	
+          </div>	
+          <div id = "orderfulfillDailyWrapper" style={{clear: 'both'}}>	
+            <div id = "dailyOrdersAll" className="orders_all">	
+              <div id = "daily_order_name" className="order_name">DAILY ORDERS</div>
+              <div id = "pending_orders_daily" className="pending_orders">
+                <label className="no_of_orders">{tmp.dailyCount}</label><label className="tot_pend_ordrs">/  {tmp.dailyTotalCount}</label> <label className="total_orders">orders pending</label>
+              </div>
+              <div id = "fakelinedaily"></div>
+            </div>	
+          </div>
+        </div>
+      );
+    }
+    }
+    
+    setTimeout(function(){
+      ReactDOM.render(<App />, document.querySelector('.order-fulffilment'));
+    }, 0)
+    return null;
 
 }
 export default OrderFulfillViz;
