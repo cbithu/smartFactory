@@ -395,6 +395,9 @@
  #pending_orders_daily{
    padding-top: 4px;
  }
+ #pending_orders_weekly{
+   padding-top: 10px;
+ }
 
  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   /* For landscape layouts only */

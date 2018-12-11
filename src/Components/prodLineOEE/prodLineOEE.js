@@ -35,7 +35,7 @@ export class ProdLineOEE extends React.Component {
     var element = this.refs.productionLine;
   }
   navigateToPage(name){
-    window.location = '/assetView/'+name;
+    window.location = '/prodline';
   }
 
   alertText(count){

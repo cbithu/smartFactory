@@ -25,12 +25,12 @@ export class AssetAvatar extends React.Component {
             },
         /*values: [ // ASS01
             {'name':"vibration", 'value':["140","120","critical", "Hz"]} 
-        ]
+        ]*/
         values: [ // ASS02
             {'name':"temperature", 'value':["250","120","normal", "F"]},
             {'name':"camera", 'value':["80","70","normal", "%"]},
             {'name':"rfid", 'value':["70","58","warning", "%"]}
-        ]*/
+        ]
     };
   }
 
@@ -76,7 +76,7 @@ export class AssetAvatar extends React.Component {
     var tmp = this.state.values;
       return (
     		<div id="assetAvatar" ref="assetAvatar">
-                <div className="innerImage" style={{backgroundImage:'url(../../Assets/'+this.state.imageMapping[this.state.assetID]+')'}}>
+                <div className="innerImage" style={{backgroundImage:"url('../../Assets/"+this.state.imageMapping[this.state.assetID]+"')"}}>
                 {tmp.map((item,key) => (
                     <div key={item.name} data-sequence={key} className={["sensor "+item.name+ " " + this.state.assetID]} type={item.name} data-valueType={item.value[3]}></div>
                 ))}

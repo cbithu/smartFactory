@@ -38,7 +38,6 @@ export class MapContainer extends React.Component {
     handleLoad(){
         
     }
-
     componentDidMount(){
         this.handleLoad();
     }
@@ -134,7 +133,7 @@ export class MapContainer extends React.Component {
         })(currentMarker, currMarkerCount, maps));
         maps.event.addListener(currentMarker, 'click', (function(currentMarker, currMarkerCount, maps) {
             return function(){
-                window.location = '/factoryFloor/'+name;
+                window.location = '/factory';
             }
         })(currentMarker, currMarkerCount, maps));
     }
@@ -227,7 +226,7 @@ export class MapContainer extends React.Component {
           bootstrapURLKeys={{ key: ["AIzaSyCJ5ZbJ-Z9tS0rDIZsXPqAWcAbUdjTkcME"] }}
           defaultCenter={this.state.defaultProps.center}
           defaultZoom={this.state.defaultProps.zoom}
-          options={this.createMapOptions}
+          options={this.GoogleMapReact}
           onGoogleApiLoaded={this.onMapLoaded}
         >
         </GoogleMapReact>

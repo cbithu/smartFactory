@@ -77,7 +77,7 @@ export function OrderFulfillViz() {
       for(var i = 0; i<5; i++)
       {               
         var weeklyCircle = document.createElement('div');
-        weeklyCircle.className = "greyCircle";                
+        weeklyCircle.className = "circle";                
         if(i == 4)
         {
           weeklyCircle.className = "greyLastCircle";
@@ -94,7 +94,7 @@ export function OrderFulfillViz() {
 
         if(i == 0 && circleWeeklyColor == 0)
         {
-          weeklyCircle.className = "greyCircle";                    
+          weeklyCircle.className = "circle";                    
           if(i == 4)
           {
             weeklyCircle.className = "greyLastCircle";
@@ -116,7 +116,7 @@ export function OrderFulfillViz() {
         'background' :  lineDailyGradient
       });
       var dailyCircle = document.createElement('div');
-      dailyCircle.className = "greyCircle";
+      dailyCircle.className = "circle";
       var dailyLastCircle = document.createElement('div');
       dailyLastCircle.className = "greyLastCircle";
       if((lineDailyPercent > 0) && (lineDailyPercent <100))

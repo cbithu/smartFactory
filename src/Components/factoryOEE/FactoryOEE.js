@@ -38,7 +38,7 @@ export class FactoryOEE extends React.Component {
     var element = this.refs.productionLine;
   }
   navigateToPage(name){
-    window.location = '/assetView/'+name;
+    window.location = '/factory';
   }
 
   alertText(count){

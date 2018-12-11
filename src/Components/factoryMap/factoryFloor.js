@@ -68,7 +68,7 @@ export class FactoryFloor extends React.Component {
       return (
         <div id="factoryView" ref="factoryView">
             <div className="controls">
-                {/* <ul>
+                {<ul>
                     <li className="fullScreen" onclick='controlHandler("fullscreen")'><span className="glyphicon glyphicon glyphicon-fullscreen"></span></li>
                     <li className="zoomIn" onclick='controlHandler("zoomin")'><span className="glyphicon glyphicon-zoom-in"></span></li>
                     <li className="zoomOut" onclick='controlHandler("zoomout")'><span className="glyphicon glyphicon-zoom-out"></span></li>
@@ -76,7 +76,7 @@ export class FactoryFloor extends React.Component {
                     <li className="leftMove"  onclick='controlHandler("left")'><span className="glyphicon glyphicon glyphicon-chevron-left"></span></li>
                     <li className="topMove"  onclick='controlHandler("top")'><span className="glyphicon glyphicon-chevron-up"></span></li>
                     <li className="bottomMove"  onclick='controlHandler("bottom")'><span className="glyphicon glyphicon-chevron-down"></span></li>
-                </ul> */}
+                </ul>}
             </div>
             <div className="imageInfoContainer">
                 <div className="innerImage">
